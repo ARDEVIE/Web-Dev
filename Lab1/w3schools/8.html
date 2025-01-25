@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link States Example</title>
+    <style>
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Link States Example</h1>
+    <p>
+        <a href="https://www.example.com" target="_blank">Visit Example</a>
+    </p>
+    <p>
+        This is an example of how different link states work. 
+        - <strong>:link</strong> applies when the link has not been visited yet.
+        - <strong>:visited</strong> applies after the link has been visited.
+        - <strong>:hover</strong> applies when the link is being hovered over.
+        - <strong>:active</strong> applies when the link is being clicked.
+    </p>
+</body>
+</html>

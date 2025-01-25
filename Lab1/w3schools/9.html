@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Map Example</title>
+</head>
+<body>
+
+    <h1>Image Map Example</h1>
+
+    <!-- Picture element for responsive images -->
+    <picture>
+        <source srcset="images/image-small.jpg" media="(max-width: 600px)">
+        <source srcset="images/image-large.jpg" media="(min-width: 601px)">
+        <img src="images/image-default.jpg" alt="Sample Image">
+    </picture>
+
+    <!-- Image with a map for clickable areas -->
+    <img src="images/planets.jpg" alt="Planets" usemap="#planetmap" width="500">
+
+    <!-- Image map definition -->
+    <map name="planetmap">
+        <area shape="rect" coords="34,44,270,350" alt="Earth" href="https://en.wikipedia.org/wiki/Earth" target="_blank">
+        <area shape="circle" coords="337,300,44" alt="Mars" href="https://en.wikipedia.org/wiki/Mars" target="_blank">
+        <area shape="poly" coords="377,135,466,167,480,219" alt="Venus" href="https://en.wikipedia.org/wiki/Venus" target="_blank">
+    </map>
+
+</body>
+</html>
