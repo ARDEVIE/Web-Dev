@@ -1,0 +1,201 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: #0067b8;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-right: 10px;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+header .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    justify-content: flex-start;
+}
+
+header .header-right {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+}
+
+header nav ul li a {
+    color: #333;
+}
+
+.payment-banner {
+    background-color: #0067b8;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.payment-banner a {
+    color: white;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url('surface-pro-bg.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.white-box {
+    background-color: white;
+    padding: 20px;
+    max-width: 400px;
+    color: #333;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-left: -50px;
+    margin-right: auto;
+}
+
+.white-box h1 {
+    font-size: 36px;
+    margin: 0 0 20px;
+}
+
+.white-box p {
+    font-size: 16px;
+    margin: 0 0 20px;
+}
+
+.white-box button {
+    background-color: #0067b8;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+}
+
+.white-box button:hover {
+    background-color: #0056a3;
+}
+
+.shop-links {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.shop-links a {
+    margin: 0 10px;
+    color: #333;
+}
+
+.products {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.product-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    width: 20%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin: 15px 0;
+}
+
+.product-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+.product-card button {
+    background-color: #0067b8;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+}
+
+.product-card button:hover {
+    background-color: #0056a3;
+}
+
+@media (max-width: 768px) {
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 80%;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+}
