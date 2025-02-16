@@ -42,7 +42,8 @@ body{
 
 
 .login-main {
-    display: flex;
+
+    float: left;
     width: 348px;
     height: 387px;
     border: 1px solid rgb(219, 219, 219);

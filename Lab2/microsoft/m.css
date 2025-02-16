@@ -98,8 +98,8 @@ header nav ul li a {
     max-width: 400px;
     color: #333;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-left: -50px;
-    margin-right: auto;
+    margin-left: auto;
+    margin-right: -50px;
 }
 
 .white-box h1 {
